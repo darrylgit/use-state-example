@@ -8,37 +8,35 @@ const UseStateExample = () => {
 
   return (
     <Card>
-      <h1> {name} </h1>
-      <h1> {address} </h1>
+      <h1>{name}</h1>
+      <h1>{address}</h1>
       <button onClick={() => setName('Andrei')}>Set Name to Andrei</button>
-      <button onClick={() => setAddress('Canada')}>Set Address</button>
+      <button onClick={() => setAddress('Canada')}>
+        Set Address to Canada
+      </button>
     </Card>
   );
 };
 
-export class StateClassComponent extends React.Component {
-  constructor() {
-    super();
+// export class StateClassComponent extends React.Component {
+//   constructor() {
+//     super();
 
-    this.state = {
-      name: 'Yihua',
-      address: 'Canada'
-    };
-  }
+//     this.state = {
+//       name: 'Yihua'
+//     };
+//   }
 
-  render() {
-    return (
-      <Card>
-        <h1> {this.state.name} </h1>
-        <button onClick={this.setState({ name: 'Andrei' })}>
-          Set Name to Andrei
-        </button>
-        <button onClick={this.setState({ address: 'Amsterdam' })}>
-          Set Address
-        </button>
-      </Card>
-    );
-  }
-}
+//   render() {
+//     return (
+//       <Card>
+//         <h1> {this.state.name} </h1>
+//         <button onClick={this.setState({ name: 'Andrei' })}>
+//           Set Name to Andrei
+//         </button>
+//       </Card>
+//     );
+//   }
+// }
 
 export default UseStateExample;
